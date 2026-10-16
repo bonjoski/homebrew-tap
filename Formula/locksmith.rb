@@ -6,6 +6,8 @@ class Locksmith < Formula
   homepage "https://github.com/bonjoski/locksmith"
   version "2.8.0"
 
+  depends_on :macos
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/bonjoski/locksmith/releases/download/v2.8.0/locksmith-darwin-arm64"
