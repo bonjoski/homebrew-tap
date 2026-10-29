@@ -7,6 +7,7 @@ This tap provides formulas for:
 - **[Aegisbox](https://github.com/bonjoski/aegisbox)** – MicroVM confinement hypervisor, desktop cockpit, and adversarial range engine.
 - **[Airlock](https://github.com/bonjoski/airlock)** – Zero-trust workstation sandbox for untrusted package installs & agentic AI loops.
 - **[Argus](https://github.com/bonjoski/argus)** – Pre-flight dependency provenance and slopsquatting interceptor.
+- **[Bomhound](https://github.com/bonjoski/bomhound)** – High-performance SBOM copyright & legal provenance enrichment engine.
 - **[Locksmith](https://github.com/bonjoski/locksmith)** – Hosted in [`bonjoski/homebrew-locksmith`](https://github.com/bonjoski/homebrew-locksmith). Secure macOS keychain-backed secrets manager with Touch ID / Apple Watch biometric authentication and desktop cockpit.
 
 ---
@@ -29,5 +30,6 @@ brew install bonjoski/tap/fabrial
 brew install bonjoski/tap/aegisbox
 brew install bonjoski/tap/airlock
 brew install bonjoski/tap/argus
+brew install bonjoski/tap/bomhound
 brew install bonjoski/locksmith/locksmith
 ```
