@@ -6,6 +6,8 @@
 class Shield < Formula
   desc "Sovereign client-side secret shielding and fail-closed wire guard for AI agents"
   homepage "https://github.com/bonjoski/shield"
+  url "https://github.com/bonjoski/shield/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "62441c688e77eef06b161fa83d338e8bcdee8794e805933c5fa73b53cf21d1dd"
   license "MIT"
   head "https://github.com/bonjoski/shield.git", branch: "main"
 

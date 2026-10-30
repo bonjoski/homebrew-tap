@@ -6,8 +6,8 @@
 class Argus < Formula
   desc "Pre-flight dependency provenance and slopsquatting interceptor"
   homepage "https://github.com/bonjoski/argus"
-  url "https://github.com/bonjoski/argus/archive/refs/tags/v0.8.2.tar.gz"
-  sha256 "79cff85231464839ac1d0d0d6fe762a3baec11e11046dd75b6babc7a1c012c47"
+  url "https://github.com/bonjoski/argus/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "b012891e580c34b585347c338fd49c27bbbd997685d37b4922cf6e3ca11f09e0"
   license "Apache-2.0"
   head "https://github.com/bonjoski/argus.git", branch: "main"
 
