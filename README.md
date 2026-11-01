@@ -12,7 +12,7 @@ This tap provides formulas for:
 - **[Conjoiner](https://github.com/bonjoski/conjoiner)** – Sovereign NIST-aligned agentic IAM broker, token attenuation, and policy gateway.
 - **[Stormcage](https://github.com/bonjoski/stormcage)** – Zero-latency MCP context firewall, taint tracker, and intent engine.
 - **[Soulcaster](https://github.com/bonjoski/soulcaster)** – Sovereign compiler wrapper and in-toto provenance attestation engine.
-- **[Locksmith](https://github.com/bonjoski/locksmith)** – Hosted in [`bonjoski/homebrew-locksmith`](https://github.com/bonjoski/homebrew-locksmith). Secure macOS keychain-backed secrets manager with Touch ID / Apple Watch biometric authentication and desktop cockpit.
+- **[Locksmith](https://github.com/bonjoski/locksmith)** – Secure macOS keychain-backed secrets manager with Touch ID / Apple Watch biometric authentication and desktop cockpit. Also mirrored in [`bonjoski/homebrew-locksmith`](https://github.com/bonjoski/homebrew-locksmith).
 
 ---
 
@@ -39,5 +39,5 @@ brew install bonjoski/tap/conjoiner
 brew install bonjoski/tap/stormcage
 brew install bonjoski/tap/soulcaster
 brew install bonjoski/tap/bomhound
-brew install bonjoski/locksmith/locksmith
+brew install bonjoski/tap/locksmith
 ```

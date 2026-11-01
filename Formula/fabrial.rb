@@ -14,7 +14,7 @@ class Fabrial < Formula
   depends_on "go" => :build
 
   # Four Security Fabric Pillars
-  depends_on "bonjoski/locksmith/locksmith"
+  depends_on "bonjoski/tap/locksmith"
   depends_on "bonjoski/tap/aegisbox"
   depends_on "bonjoski/tap/airlock"
   depends_on "bonjoski/tap/argus"
