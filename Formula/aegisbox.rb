@@ -4,8 +4,8 @@
 class Aegisbox < Formula
   desc "Unbreakable AI Execution Sandbox & Adversarial Range Engine"
   homepage "https://github.com/bonjoski/aegisbox"
-  url "https://github.com/bonjoski/aegisbox/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "514b06f41756f767ba29a3903e4fad06dbaa9022fb43db67c535c6cbcf3b9f89"
+  url "https://github.com/bonjoski/aegisbox/archive/refs/tags/v0.6.1.tar.gz"
+  sha256 "789742e1b760ebaa0d3e490eabba2c3bf01e7d5a67d48d0d9e6579519e413e30"
   license "MIT"
   head "https://github.com/bonjoski/aegisbox.git", branch: "main"
 
@@ -26,6 +26,7 @@ class Aegisbox < Formula
     system "go", "build", *std_go_args(output: bin/"aegisboxd", ldflags: "-s -w"), "./cmd/aegisboxd"
     system "go", "build", *std_go_args(output: bin/"aegisbox-netd", ldflags: "-s -w"), "./cmd/aegisbox-netd"
     system "go", "build", *std_go_args(output: bin/"aegisbox-guest", ldflags: "-s -w"), "./cmd/aegisbox-guest"
+    system "go", "build", *std_go_args(output: bin/"aegisbox-spiffe-agent", ldflags: "-s -w"), "./cmd/aegisbox-spiffe-agent"
 
     # Install desktop cockpit on macOS
     if OS.mac? && Hardware::CPU.arm?
@@ -47,6 +48,7 @@ class Aegisbox < Formula
   test do
     assert_match "aegisbox version", shell_output("#{bin}/aegisbox version")
     assert_path_exists bin/"aegisboxd"
+    assert_path_exists bin/"aegisbox-spiffe-agent"
     if OS.mac? && Hardware::CPU.arm?
       assert_path_exists bin/"aegisbox-cockpit"
     end
