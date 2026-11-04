@@ -6,8 +6,8 @@
 class Fabrial < Formula
   desc "Sovereign AI agent security fabric orchestrating the bonjoski security toolchain"
   homepage "https://github.com/bonjoski/fabrial"
-  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.5.2.tar.gz"
-  sha256 "8951d5aafc9dd2dd5eaf2515ed0dacb7909de5fc90b0e983f6c783076dbe3d4e"
+  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.5.3.tar.gz"
+  sha256 "3790eb1ad43f62f8237b23a914200c279aec8faa1d0ced7d0bf553cdb7edc982"
   license "Apache-2.0"
   head "https://github.com/bonjoski/fabrial.git", branch: "main"
 
@@ -43,7 +43,7 @@ class Fabrial < Formula
     <<~EOS
       💎 Fabrial Sovereign AI Security Fabric has been installed!
 
-      To inspect the health and socket status of all 10 ecosystem pillars:
+      To inspect the health and socket status of all 9 security tools:
         fabrial doctor
 
       To automatically repair misconfigured permissions or stale sockets:
