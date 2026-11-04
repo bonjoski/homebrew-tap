@@ -2,22 +2,27 @@
 # frozen_string_literal: true
 
 # Formula for Fabrial (bonjoski/fabrial)
-# The Sovereign AI Agent Security Fabric: Airlock, Locksmith, Aegisbox, and Argus.
+# The Sovereign AI Agent Security Fabric: Airlock, Locksmith, Aegisbox, Argus, Shield, Conjoiner, Stormcage, Soulcaster, Bomhound.
 class Fabrial < Formula
-  desc "Sovereign AI agent security fabric unifying Airlock, Locksmith, Aegisbox, Argus"
+  desc "Sovereign AI agent security fabric orchestrating the bonjoski security toolchain"
   homepage "https://github.com/bonjoski/fabrial"
-  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "88eb3ece063a8232930f8f5307b47e32302200e3e3792204f24a89923dd10f52"
+  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.5.2.tar.gz"
+  sha256 "8951d5aafc9dd2dd5eaf2515ed0dacb7909de5fc90b0e983f6c783076dbe3d4e"
   license "Apache-2.0"
   head "https://github.com/bonjoski/fabrial.git", branch: "main"
 
   depends_on "go" => :build
 
-  # Four Security Fabric Pillars
+  # Sovereign AI Security & Supply-Chain Pillars
+  depends_on "bonjoski/tap/airlock"
   depends_on "bonjoski/tap/locksmith"
   depends_on "bonjoski/tap/aegisbox"
-  depends_on "bonjoski/tap/airlock"
   depends_on "bonjoski/tap/argus"
+  depends_on "bonjoski/tap/shield"
+  depends_on "bonjoski/tap/conjoiner"
+  depends_on "bonjoski/tap/stormcage"
+  depends_on "bonjoski/tap/soulcaster"
+  depends_on "bonjoski/tap/bomhound"
 
   on_linux do
     depends_on "bubblewrap"
@@ -36,22 +41,24 @@ class Fabrial < Formula
 
   def caveats
     <<~EOS
-      💎 Fabrial Security Fabric has been installed!
+      💎 Fabrial Sovereign AI Security Fabric has been installed!
 
-      To check the health of all four security pillars (Airlock, Locksmith, Aegisbox, Argus):
+      To inspect the health and socket status of all 10 ecosystem pillars:
         fabrial doctor
 
-      Run sandboxed agent commands:
-        # Tier 1: Fast Kernel Confinement (<15ms)
-        fabrial exec --profile agent -- <command>
+      To automatically repair misconfigured permissions or stale sockets:
+        fabrial doctor --fix
 
-        # Tier 2: MicroVM Confinement (~100ms via Aegisbox hypervisor)
-        fabrial exec --profile agent --microvm -- <command>
+      To initialize an ambient multi-agent session with amortized biometrics:
+        eval $(fabrial session begin)
+
+      To check active subagent sessions and microVM queue status:
+        fabrial session status
     EOS
   end
 
   test do
     assert_match "Fabrial Unified Fabric", shell_output("#{bin}/fabrial version")
-    assert_match "Fabrial Multi-Pillar Diagnostic Suite", shell_output("#{bin}/fabrial doctor")
+    assert_match "Diagnostic Suite", shell_output("#{bin}/fabrial doctor")
   end
 end
