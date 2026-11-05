@@ -15,11 +15,17 @@ class Conjoiner < Formula
 
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/conjoiner"
+    bin.install_symlink bin/"conjoiner" => "mcp-conjoiner-proxy"
   end
 
   def caveats
     <<~EOS
-      🔗 Conjoiner Agentic IAM Broker & Policy Gateway has been installed!
+      🔗 Conjoiner Agentic IAM Broker & MCP Transport Shim has been installed!
+
+      To transparently protect an MCP server in Cursor, Claude Code, or Windsurf:
+        Set MCP command to "mcp-conjoiner-proxy" followed by "--" and the server command:
+          "command": "mcp-conjoiner-proxy",
+          "args": ["--", "npx", "-y", "@modelcontextprotocol/server-postgres", "..."]
 
       To issue task-attenuated tokens:
         conjoiner token issue --scope "fs:read:/workspace,tool:exec:git:status"
@@ -31,5 +37,6 @@ class Conjoiner < Formula
 
   test do
     assert_match "conjoiner version", shell_output("#{bin}/conjoiner version 2>&1")
+    assert_match "Usage:", shell_output("#{bin}/mcp-conjoiner-proxy 2>&1", 1)
   end
 end
