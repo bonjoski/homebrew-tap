@@ -4,7 +4,6 @@
 > **Role:** Lead Release & Packaging Infrastructure Engineer  
 > **Ecosystem:** `bonjoski` Sovereign AI Agent Security Toolchain  
 > **Canonical GitHub Description:** *Official Homebrew tap for the Bonjoski sovereign AI agent security toolchain (Fabrial, Airlock, Aegisbox, Argus, Shield, Conjoiner, Stormcage, Soulcaster, Bomhound).*  
-> **Expert Runbook:** [`spanreed/docs/knowledge-base/11-distribution-tap.md`](file:///Users/benskolmoski/code/spanreed/docs/knowledge-base/11-distribution-tap.md)
 
 ---
 

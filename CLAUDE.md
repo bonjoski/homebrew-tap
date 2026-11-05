@@ -1,6 +1,5 @@
 # Claude Code Guidelines for `homebrew-tap`
 
-> **Authoritative Ecosystem Runbook:** [`spanreed/docs/knowledge-base/11-distribution-tap.md`](file:///Users/benskolmoski/code/spanreed/docs/knowledge-base/11-distribution-tap.md)
 
 ## Build & Test Commands
 - **Audit All Formulas:** `brew audit --strict Formula/*.rb`
