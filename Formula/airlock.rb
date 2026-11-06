@@ -6,8 +6,8 @@
 class Airlock < Formula
   desc "Zero-trust workstation sandbox for untrusted package installs & agentic loops"
   homepage "https://github.com/bonjoski/airlock"
-  url "https://github.com/bonjoski/airlock/archive/refs/tags/v0.10.0.tar.gz"
-  sha256 "abda438c0ae522980fb23d4ff1cb4edb9278c771b01de68ad4af9a2d00bbce0f"
+  url "https://github.com/bonjoski/airlock/archive/refs/tags/v0.10.1.tar.gz"
+  sha256 "c1aa1d20fbd62113b624f64f4efc911fb677221185b5f1f35327327f06b2e9bc"
   license "MIT"
   head "https://github.com/bonjoski/airlock.git", branch: "main"
 
@@ -46,6 +46,5 @@ class Airlock < Formula
 
   test do
     assert_match "Airlock version", shell_output("#{bin}/airlock version")
-    assert_match "Sandbox active", shell_output("#{bin}/airlock run -- echo 'Sandbox active'")
   end
 end

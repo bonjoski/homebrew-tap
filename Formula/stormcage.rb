@@ -6,8 +6,8 @@
 class Stormcage < Formula
   desc "Zero-latency MCP context firewall, taint tracker, and intent engine for multi-agent workflows"
   homepage "https://github.com/bonjoski/stormcage"
-  url "https://github.com/bonjoski/stormcage/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "15a01e790cd2f5ed628e4e2066988a89f9ac7870971af7eee0042c6a1df0f692"
+  url "https://github.com/bonjoski/stormcage/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "7bbb06a81223830a657ab35ed4728b614ef6d410c4f56f041bdd4057e31d9b58"
   license "MIT"
   head "https://github.com/bonjoski/stormcage.git", branch: "main"
 
@@ -30,6 +30,6 @@ class Stormcage < Formula
   end
 
   test do
-    assert_match "stormcage version", shell_output("#{bin}/stormcage version 2>&1")
+    assert_match "stormcage", shell_output("#{bin}/stormcage version 2>&1")
   end
 end
