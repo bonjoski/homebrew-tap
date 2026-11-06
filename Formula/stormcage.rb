@@ -6,8 +6,8 @@
 class Stormcage < Formula
   desc "Zero-latency MCP context firewall, taint tracker, and intent engine for multi-agent workflows"
   homepage "https://github.com/bonjoski/stormcage"
-  url "https://github.com/bonjoski/stormcage/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "089200f3f4466d3f93e72fb3d2a51b4b688f32c11b88d53ab7e74c18eacb18cf"
+  url "https://github.com/bonjoski/stormcage/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "15a01e790cd2f5ed628e4e2066988a89f9ac7870971af7eee0042c6a1df0f692"
   license "MIT"
   head "https://github.com/bonjoski/stormcage.git", branch: "main"
 
