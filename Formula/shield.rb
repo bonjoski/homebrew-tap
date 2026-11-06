@@ -6,8 +6,8 @@
 class Shield < Formula
   desc "Sovereign client-side secret shielding and fail-closed wire guard for AI agents"
   homepage "https://github.com/bonjoski/shield"
-  url "https://github.com/bonjoski/shield/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "b54dab39cd8a0ab1f61f6d382a7661b08b2442b52901299d06de96684de78135"
+  url "https://github.com/bonjoski/shield/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "f990b3cdc4847758d6765161cba95ffabaa42d46378b0746b1ad1a4a00e48e64"
   license "MIT"
   head "https://github.com/bonjoski/shield.git", branch: "main"
 
@@ -30,6 +30,6 @@ class Shield < Formula
   end
 
   test do
-    assert_match "shield version", shell_output("#{bin}/shield version 2>&1")
+    assert_match "bonjoski sovereign BYO-AI shield", shell_output("#{bin}/shield version 2>&1")
   end
 end
