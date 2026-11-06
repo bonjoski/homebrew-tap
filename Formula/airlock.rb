@@ -6,8 +6,8 @@
 class Airlock < Formula
   desc "Zero-trust workstation sandbox for untrusted package installs & agentic loops"
   homepage "https://github.com/bonjoski/airlock"
-  url "https://github.com/bonjoski/airlock/archive/refs/tags/v0.10.1.tar.gz"
-  sha256 "c1aa1d20fbd62113b624f64f4efc911fb677221185b5f1f35327327f06b2e9bc"
+  url "https://github.com/bonjoski/airlock/archive/refs/tags/v0.10.2.tar.gz"
+  sha256 "e745fd04863d6f513ce4838bc0c903c32877af273e1a3256cd9c94be8e6ce6ff"
   license "MIT"
   head "https://github.com/bonjoski/airlock.git", branch: "main"
 

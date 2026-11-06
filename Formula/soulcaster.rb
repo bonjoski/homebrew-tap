@@ -6,8 +6,8 @@
 class Soulcaster < Formula
   desc "Sovereign compiler wrapper and in-toto provenance attestation engine"
   homepage "https://github.com/bonjoski/soulcaster"
-  url "https://github.com/bonjoski/soulcaster/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "44cb013b1fa6f88a76e8b333d278a7101eaef2c9de21adfe708645c58c24e0ca"
+  url "https://github.com/bonjoski/soulcaster/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "d29766603aea04e272a0d56cb085828ee5b64bbc7e9722011f06cad8794aee09"
   license "MIT"
   head "https://github.com/bonjoski/soulcaster.git", branch: "main"
 
