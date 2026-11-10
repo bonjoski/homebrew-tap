@@ -4,44 +4,33 @@
 class Aegisbox < Formula
   desc "Unbreakable AI Execution Sandbox & Adversarial Range Engine"
   homepage "https://github.com/bonjoski/aegisbox"
-  url "https://github.com/bonjoski/aegisbox/archive/refs/tags/v0.6.2.tar.gz"
-  sha256 "19d881106dc0aa1b02c3ae131f2c52c77c94fee38c4e41123a0ac9cb74c7c91a"
+  url "https://github.com/bonjoski/aegisbox/archive/refs/tags/v0.6.3.tar.gz"
+  sha256 "860d26965ac9493004c885f5fa8fe30c0b93f1ba3754a7e49c1d20cad1e6ae20"
   license "MIT"
   head "https://github.com/bonjoski/aegisbox.git", branch: "main"
 
   depends_on "go" => :build
 
-  on_macos do
-    if Hardware::CPU.arm?
-      resource "cockpit-arm64" do
-        url "https://github.com/bonjoski/aegisbox/releases/download/v0.5.3/aegisbox-cockpit-darwin-arm64"
-        sha256 "e182956dfac43bcb2c75d789a39d67c8dcf7806d3f1f9903a5a8da5645314e2d"
-      end
-    end
-  end
-
   def install
-    # Core Go binaries
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/aegisbox"
-    system "go", "build", *std_go_args(output: bin/"aegisboxd", ldflags: "-s -w"), "./cmd/aegisboxd"
-    system "go", "build", *std_go_args(output: bin/"aegisbox-netd", ldflags: "-s -w"), "./cmd/aegisbox-netd"
-    system "go", "build", *std_go_args(output: bin/"aegisbox-guest", ldflags: "-s -w"), "./cmd/aegisbox-guest"
-    system "go", "build", *std_go_args(output: bin/"aegisbox-spiffe-agent", ldflags: "-s -w"), "./cmd/aegisbox-spiffe-agent"
+    ldflags = "-s -w -X github.com/bonjoski/aegisbox/pkg/version.Version=#{version}"
 
-    # Install desktop cockpit on macOS
-    if OS.mac? && Hardware::CPU.arm?
-      resource("cockpit-arm64").stage do
-        bin.install "aegisbox-cockpit-darwin-arm64" => "aegisbox-cockpit"
-      end
-    end
+    # Core Go binaries (built from uniform v#{version} source)
+    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/aegisbox"
+    system "go", "build", *std_go_args(output: bin/"aegisboxd", ldflags: ldflags), "./cmd/aegisboxd"
+    system "go", "build", *std_go_args(output: bin/"aegisbox-netd", ldflags: ldflags), "./cmd/aegisbox-netd"
+    system "go", "build", *std_go_args(output: bin/"aegisbox-guest", ldflags: ldflags), "./cmd/aegisbox-guest"
+    system "go", "build", *std_go_args(output: bin/"aegisbox-spiffe-agent", ldflags: ldflags), "./cmd/aegisbox-spiffe-agent"
   end
 
   def caveats
     <<~EOS
-      Aegisbox MicroVM engine and Cockpit have been installed!
+      Aegisbox MicroVM engine (#{version}) has been installed!
 
-      To launch the Aegisbox Cockpit GUI:
-        aegisbox cockpit
+      NOTE (macOS Hardware Hypervisor Entitlements):
+        Apple Virtualization.framework / Hypervisor.framework requires binaries
+        invoking hardware microVMs (`aegisbox`, `aegisboxd`) to carry the
+        `com.apple.security.virtualization` / `com.apple.security.hypervisor`
+        entitlements (distributed via signed `.app` bundle or local codesign).
     EOS
   end
 
@@ -49,8 +38,5 @@ class Aegisbox < Formula
     assert_match "aegisbox version", shell_output("#{bin}/aegisbox version")
     assert_path_exists bin/"aegisboxd"
     assert_path_exists bin/"aegisbox-spiffe-agent"
-    if OS.mac? && Hardware::CPU.arm?
-      assert_path_exists bin/"aegisbox-cockpit"
-    end
   end
 end

@@ -6,8 +6,8 @@
 class Conjoiner < Formula
   desc "Sovereign NIST-aligned agentic IAM broker, token attenuation, and policy gateway"
   homepage "https://github.com/bonjoski/conjoiner"
-  url "https://github.com/bonjoski/conjoiner/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "681263b46d5f55e9cd394f246ee0ec223c858320c580c7f711ced892285c2bd6"
+  url "https://github.com/bonjoski/conjoiner/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "d01a95a2a70e5a98a7138de5da6383d67ab273b799e8e50d613e73fc709fed02"
   license "MIT"
   head "https://github.com/bonjoski/conjoiner.git", branch: "main"
 
