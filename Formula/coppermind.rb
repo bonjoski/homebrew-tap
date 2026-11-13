@@ -6,8 +6,8 @@
 class Coppermind < Formula
   desc "Portable cognitive AI brain and sovereign agent memory runtime"
   homepage "https://github.com/bonjoski/coppermind"
-  url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "b7eb8a21c23062d0535b92315677bfac7bdf22f12844aaba005315a4311ad418"
+  url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "b9ccfbc4d8b2b6a3ce5fc702fe233806c804f9003dadcd87b78c82231cddceaa"
   license "Apache-2.0"
   head "https://github.com/bonjoski/coppermind.git", branch: "main"
 
@@ -30,6 +30,9 @@ class Coppermind < Formula
       To manage isolated project vaults:
         coppermind project list
         coppermind project use <name>
+
+      To scan and index a codebase repository:
+        coppermind index
 
       To install the automated episodic git commit hook in your current repository:
         coppermind hook install
