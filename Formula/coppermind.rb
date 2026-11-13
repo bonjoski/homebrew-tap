@@ -7,14 +7,14 @@ class Coppermind < Formula
   desc "Portable cognitive AI brain and sovereign agent memory runtime"
   homepage "https://github.com/bonjoski/coppermind"
   url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "b7eb8a21c23062d0535b92315677bfac7bdf22f12844aaba005315a4311ad418"
   license "Apache-2.0"
   head "https://github.com/bonjoski/coppermind.git", branch: "main"
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w -X main.Version=#{version}"), "./cmd/coppermind"
+    system "go", "build", *std_go_args(ldflags: "-s -w -X github.com/bonjoski/coppermind/pkg/version.Version=#{version} -X github.com/bonjoski/coppermind/pkg/version.Commit=v#{version}"), "./cmd/coppermind"
   end
 
   def caveats
