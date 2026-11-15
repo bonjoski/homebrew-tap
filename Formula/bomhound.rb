@@ -6,8 +6,8 @@
 class Bomhound < Formula
   desc "Enrich SBOMs with copyright, provenance, and legal attribution notices"
   homepage "https://github.com/bonjoski/bomhound"
-  url "https://github.com/bonjoski/bomhound/archive/refs/tags/v0.1.7.tar.gz"
-  sha256 "4bfd0259597b862178c295938091727e69760e44ac9a13b23ea2d3a72d86a64d"
+  url "https://github.com/bonjoski/bomhound/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "1c71d8177ede503b13ff02d93c8e8dee14ac10d24972e1d6552715ca9d28a789"
   license "Apache-2.0"
   head "https://github.com/bonjoski/bomhound.git", branch: "main"
 
