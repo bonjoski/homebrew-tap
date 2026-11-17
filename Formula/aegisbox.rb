@@ -4,8 +4,8 @@
 class Aegisbox < Formula
   desc "Unbreakable AI Execution Sandbox & Adversarial Range Engine"
   homepage "https://github.com/bonjoski/aegisbox"
-  url "https://github.com/bonjoski/aegisbox/archive/refs/tags/v0.7.1.tar.gz"
-  sha256 "7c580e3ef24200a4f0e30ce6838ba493e4189795d23cfa5f3803ccc3cf68422f"
+  url "https://github.com/bonjoski/aegisbox/archive/refs/tags/v0.7.2.tar.gz"
+  sha256 "9cad185019daf15bfcb41134a1a586861ca81f34780e4c6e73ed12f59a44358c"
   license "MIT"
   head "https://github.com/bonjoski/aegisbox.git", branch: "main"
 
