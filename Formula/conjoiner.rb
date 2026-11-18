@@ -4,7 +4,7 @@
 # Formula for Conjoiner (bonjoski/conjoiner)
 # Sovereign Agentic IAM Broker, Token Attenuation, and Policy Gateway
 class Conjoiner < Formula
-  desc "Sovereign NIST-aligned agentic IAM broker, token attenuation, and policy gateway"
+  desc "Deterministic tool gateway and RFC 9449 DPoP token library for AI agents"
   homepage "https://github.com/bonjoski/conjoiner"
   url "https://github.com/bonjoski/conjoiner/archive/refs/tags/v0.3.2.tar.gz"
   sha256 "6a146ca9ecd790e03cf9b9fcde003f08ad11a1bdf9a755206b87f1e5d36e94d5"

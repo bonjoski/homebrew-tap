@@ -4,7 +4,7 @@
 # Formula for Stormcage (bonjoski/stormcage)
 # Zero-Latency MCP Context Firewall, Taint Tracker, and Intent Engine
 class Stormcage < Formula
-  desc "Zero-latency MCP context firewall, taint tracker, and intent engine for multi-agent workflows"
+  desc "In-process prompt and context sanitization Go library for multi-agent workflows"
   homepage "https://github.com/bonjoski/stormcage"
   url "https://github.com/bonjoski/stormcage/archive/refs/tags/v0.3.1.tar.gz"
   sha256 "58c6e896f471cb05f12aa4076400e5c6e630a48c77a9320ae0770f2ccb942310"

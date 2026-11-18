@@ -4,7 +4,7 @@
 # Formula for Argus (bonjoski/argus)
 # Pre-Flight Dependency Provenance & Slopsquatting Interceptor
 class Argus < Formula
-  desc "Pre-flight dependency provenance and slopsquatting interceptor"
+  desc "Pre-flight dependency validator and local typosquatting package scanner"
   homepage "https://github.com/bonjoski/argus"
   url "https://github.com/bonjoski/argus/archive/refs/tags/v0.10.2.tar.gz"
   sha256 "873b002cab9d7560980fc399715b679bb817fdec08d0e94ba379f1cd83115bc4"

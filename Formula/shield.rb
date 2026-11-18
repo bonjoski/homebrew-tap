@@ -4,7 +4,7 @@
 # Formula for Shield (bonjoski/shield)
 # Sovereign Client-Side Secret Shielding & Fail-Closed Wire Guard for AI Agents
 class Shield < Formula
-  desc "Sovereign client-side secret shielding and fail-closed wire guard for AI agents"
+  desc "Local client-side secret redactor and loopback wire guard proxy for AI agents"
   homepage "https://github.com/bonjoski/shield"
   url "https://github.com/bonjoski/shield/archive/refs/tags/v0.3.1.tar.gz"
   sha256 "613880a03c830bdf4e12be4e8569b3ff2cdb92a301bb5e7c467d679357a197dc"
