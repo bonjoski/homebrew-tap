@@ -6,8 +6,8 @@
 class Stormcage < Formula
   desc "In-process prompt and context sanitization Go library for multi-agent workflows"
   homepage "https://github.com/bonjoski/stormcage"
-  url "https://github.com/bonjoski/stormcage/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "50856587bbcf2ca6a10eaa95b14e92a27ef151d4aaf688f1ed01fbdd062ddc0c"
+  url "https://github.com/bonjoski/stormcage/archive/refs/tags/v0.3.3.tar.gz"
+  sha256 "4b5144719bf3d306bbae2a5e2fcf117b824c64c5721919efe2b4209bae281659"
   license "MIT"
   head "https://github.com/bonjoski/stormcage.git", branch: "main"
 
