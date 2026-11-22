@@ -6,12 +6,14 @@ Official Homebrew tap for the Bonjoski sovereign AI agent security ecosystem.
 > **Developer Tooling & Safe Harbor Scope**: All formulas in this tap distribute personal developer workstation utilities running strictly on localhost with zero multi-tenant cloud control planes or commercial enterprise AI runtime security features.
 
 This tap provides formulas for:
-- **[Fabrial](https://github.com/bonjoski/fabrial)** – Sovereign AI agent security fabric unifying Airlock, Locksmith, Aegisbox, and Argus.
+- **[Paved-Road (`paved-road`)](Formula/paved-road.rb)** – Single-command meta-formula installing the complete 60-second local developer toolchain.
+- **[Fabrial](https://github.com/bonjoski/fabrial)** – Sovereign AI agent security fabric unifying Airlock, Locksmith, Aegisbox, and Argus (`fabrial init`, `fabrial check --diff`).
 - **[Aegisbox](https://github.com/bonjoski/aegisbox)** – MicroVM confinement hypervisor, desktop cockpit, and adversarial range engine.
 - **[Airlock](https://github.com/bonjoski/airlock)** – Zero-trust workstation sandbox for untrusted package installs & agentic AI loops.
 - **[Argus](https://github.com/bonjoski/argus)** – Pre-flight dependency validator and local typosquatting package scanner.
 - **[Bomhound](https://github.com/bonjoski/bomhound)** – High-performance SBOM copyright & legal provenance enrichment engine.
-- **[Shield](https://github.com/bonjoski/shield)** – Local client-side secret redactor and loopback wire guard proxy for AI agents.
+- **[Coppermind](https://github.com/bonjoski/coppermind)** – Portable local cognitive memory & security mentor capsule engine.
+- **[Shield](https://github.com/bonjoski/shield)** – Local workstation CLI/pipe secret redactor and `127.0.0.1` loopback utility.
 - **[Conjoiner](https://github.com/bonjoski/conjoiner)** – Deterministic tool gateway and RFC 9449 DPoP reference library for local agent CLI tools.
 - **[Stormcage](https://github.com/bonjoski/stormcage)** – In-process prompt and context sanitization Go library for multi-agent test harnesses.
 - **[Soulcaster](https://github.com/bonjoski/soulcaster)** – Sovereign compiler wrapper and in-toto provenance attestation engine.
@@ -19,19 +21,43 @@ This tap provides formulas for:
 
 ---
 
-## 🚀 Installation
+## ⚡ 60-Second Paved-Road Install (Single Command)
+
+Install the entire local sovereign toolchain in one step — zero YAML files, zero cloud control plane:
+
+### Option A: Single-Command Meta-Formula
+```bash
+brew tap bonjoski/tap
+brew install bonjoski/tap/paved-road
+```
+
+### Option B: Homebrew Bundle (`Brewfile.paved-road`)
+```bash
+brew bundle --file=Brewfile.paved-road
+```
+
+### Verify & Protect Any Repo in <60 Seconds
+```bash
+# 1. Read-only stack & AI SDK detection (0 YAML written)
+fabrial init
+
+# 2. Move plaintext .env keys into Touch ID / TPM keychain and shred disk plaintext
+locksmith migrate .env
+
+# 3. Preview proven diff-only PR checks locally (zero Touch ID prompts, N=8 worktree safe)
+fabrial check --diff --why
+```
+
+---
+
+## 🚀 Individual Formula Installation
 
 Tap the repository:
 ```bash
 brew tap bonjoski/tap
 ```
 
-Install Fabrial (automatically installs all four pillars: Aegisbox, Airlock, Argus, and Locksmith):
-```bash
-brew install fabrial
-```
-
-Or install individual tools:
+Install Fabrial (or individual tools):
 ```bash
 brew install bonjoski/tap/fabrial
 brew install bonjoski/tap/aegisbox
@@ -42,5 +68,6 @@ brew install bonjoski/tap/conjoiner
 brew install bonjoski/tap/stormcage
 brew install bonjoski/tap/soulcaster
 brew install bonjoski/tap/bomhound
+brew install bonjoski/tap/coppermind
 brew install bonjoski/tap/locksmith
 ```

@@ -1,0 +1,36 @@
+# ==============================================================================
+# Brewfile.paved-road — 60-Second Sovereign Local Toolchain Onboarding
+# ==============================================================================
+# Usage:
+#   brew bundle --file=Brewfile.paved-road
+#
+# Safe Harbor Scope:
+#   100% local single-developer workstation DevEx executing on localhost with
+#   public OS primitives (Seatbelt, Landlock, Touch ID/TPM, local microVMs).
+#   Zero multi-tenant cloud control planes or enterprise AI runtime security.
+# ==============================================================================
+
+tap "bonjoski/tap"
+
+# Core Orchestrator & 60-Second Zero-Config Entry Point (`fabrial init`, `fabrial check --diff`)
+brew "bonjoski/tap/fabrial"
+
+# Tier 1 & Tier 2 Local Execution Confinement
+brew "bonjoski/tap/airlock"
+brew "bonjoski/tap/aegisbox"
+
+# Biometric Secrets & Pre-Flight Package Spellchecker
+brew "bonjoski/tap/locksmith"
+brew "bonjoski/tap/argus"
+
+# Local Cryptographic Receipts (SLSA v1.0 / in-toto & CycloneDX SBOM)
+brew "bonjoski/tap/soulcaster"
+brew "bonjoski/tap/bomhound"
+
+# Local Workstation CLI/Pipe Secret Redactor, In-Process Sanitization Library & Tool IAM
+brew "bonjoski/tap/shield"
+brew "bonjoski/tap/stormcage"
+brew "bonjoski/tap/conjoiner"
+
+# Portable Local Cognitive Memory & Security Mentor Capsules
+brew "bonjoski/tap/coppermind"
