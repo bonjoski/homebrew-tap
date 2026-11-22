@@ -6,8 +6,8 @@
 class Fabrial < Formula
   desc "Sovereign AI agent security fabric orchestrating the bonjoski security toolchain"
   homepage "https://github.com/bonjoski/fabrial"
-  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.7.0.tar.gz"
-  sha256 "2ea3df886b9d45b20153c6210092caa3295ebc23fd96397f49b375f96e808a50"
+  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.7.1.tar.gz"
+  sha256 "875c16562fe81406ccdf9045c8cdf361fb0a832faa8ed4be0642eb938fe538b1"
   license "Apache-2.0"
   head "https://github.com/bonjoski/fabrial.git", branch: "main"
 
