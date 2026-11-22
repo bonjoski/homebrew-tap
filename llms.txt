@@ -25,3 +25,7 @@
 
 ## Documentation
 - Documentation: README.md & AGENTS.md
+
+
+## Paved-Road Single-Command Bundle (`2026-11-22`)
+- `paved-road` (`Formula/paved-road.rb` & `Brewfile.paved-road`): Installs all public sovereign local workstation tools in one command (`brew install bonjoski/tap/paved-road`) with 60-second onboarding caveats (`fabrial init --mcp --apply`, `locksmith migrate .env`, `eval "$(fabrial session begin)"`, `fabrial check --diff --why && fabrial receipt verify`).

@@ -4,26 +4,26 @@
 class Locksmith < Formula
   desc "Secure keychain-backed secrets manager with biometric authentication"
   homepage "https://github.com/bonjoski/locksmith"
-  version "3.3.3"
+  version "3.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/locksmith-darwin-arm64"
-      sha256 "6feb66caa92f5926d80be26ba8d222f467ef38b5e9de7a4b0cd4f5bc4dc91f85"
+      url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/locksmith-darwin-arm64"
+      sha256 "a609a3439d778c85ea4381175b3e9344e021e2d85608b3d22a538d724938743a"
 
       resource "summon-arm64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/summon-locksmith-darwin-arm64"
-        sha256 "b08c66ae804b16e19544f2ba813974e1cbe8b5166e08bd8a6b75f1a5a2bd1603"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/summon-locksmith-darwin-arm64"
+        sha256 "2db976994146d14e4ea1d8207ece491bca278fb0d8e130375203d65981e49850"
       end
 
       resource "git-credential-arm64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/git-credential-locksmith-darwin-arm64"
-        sha256 "c27f6880b9d50f96285fe0bca54d664396d821caa90d98efa9fa02bcc8bb4714"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/git-credential-locksmith-darwin-arm64"
+        sha256 "6daccccd8c36541c6a48b296dc606860446d6ce78ce81342288e47599abebb89"
       end
 
       resource "cockpit-arm64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/locksmith-cockpit-darwin-arm64"
-        sha256 "b2bb84cb905a1d71d3a9905fb1c2d20922e4f29eb23fed64146a26b5487f7ec8"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/locksmith-cockpit-darwin-arm64"
+        sha256 "4474960c41d1b2422353ef388d703938ddf26d8bb84b1912e5ecde547ba1d100"
       end
 
       def install
@@ -39,22 +39,22 @@ class Locksmith < Formula
         end
       end
     else
-      url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/locksmith-darwin-amd64"
-      sha256 "c0801bd0b41639f3e8cd48484eab4e53acb9cf8e30ca0f4d6cc973a9d9e2f56f"
+      url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/locksmith-darwin-amd64"
+      sha256 "e72a71a7f06ca5392328c50206a4b56872d5df94d83e80db2211250a05a642c1"
 
       resource "summon-amd64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/summon-locksmith-darwin-amd64"
-        sha256 "9cba2a2f6106df2e97509f9d35231787c10db12278f9cca0e6147d661ef15fcd"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/summon-locksmith-darwin-amd64"
+        sha256 "60b1130d54225c460dd544674c8a21ee57f7c131cfa576b49d3b73a1532eaeea"
       end
 
       resource "git-credential-amd64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/git-credential-locksmith-darwin-amd64"
-        sha256 "e9cbc54d198cefb318f6440231eab29c1300f9fb5722fa73398cee898c07a7f9"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/git-credential-locksmith-darwin-amd64"
+        sha256 "dd512c4d01423006a88dde8e22c63fb85e9fe2782b94f3121b8c266d1425c801"
       end
 
       resource "cockpit-amd64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/locksmith-cockpit-darwin-amd64"
-        sha256 "5a09568d5cde3166849d73821b4119cb3d9f3e0a29cec0c694da718f8351d764"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/locksmith-cockpit-darwin-amd64"
+        sha256 "8574d86b9c9276d0133348a4d486f36122e8486e373d53fbf2c3ccea555a52da"
       end
 
       def install
@@ -74,12 +74,12 @@ class Locksmith < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/locksmith-linux-arm64"
-      sha256 "2249221aa441cdb419af25bb9ae15e5557c7c59a519e36e3c314fc6fb7f68ae5"
+      url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/locksmith-linux-arm64"
+      sha256 "e65f9e7ce3d94f5853486e5f87cfaaf41dfa2a4dbb8ab99f5c9a91b3be427708"
 
       resource "git-credential-linux-arm64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/git-credential-locksmith-linux-arm64"
-        sha256 "23c046800788cc6c8f8e214a40406b13fc7b7a2d306acbe20e09dccc82521148"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/git-credential-locksmith-linux-arm64"
+        sha256 "6ddc3bc4d1f01833011a3adeebbbe061af08bd1add706f2cae74d8667e9772cb"
       end
 
       def install
@@ -89,12 +89,12 @@ class Locksmith < Formula
         end
       end
     else
-      url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/locksmith-linux-amd64"
-      sha256 "2001908e4b516d079eece60a4e494bae18d319654e9c67649c66efc7e13c7923"
+      url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/locksmith-linux-amd64"
+      sha256 "6e7b1d9c7a42efc1ab9ab0fcb8bfdd7612e302400c4a4bf2e51c406a1487b406"
 
       resource "git-credential-linux-amd64" do
-        url "https://github.com/bonjoski/locksmith/releases/download/v3.3.3/git-credential-locksmith-linux-amd64"
-        sha256 "452c28dc4d160bc1ac9008b4d0c5c7cb84a01a4b73e753d835acb5e8f91a20c2"
+        url "https://github.com/bonjoski/locksmith/releases/download/v3.4.0/git-credential-locksmith-linux-amd64"
+        sha256 "645a035213858c9dd2097a2b49ecbb18165a2683757f7f9da01293b366426311"
       end
 
       def install

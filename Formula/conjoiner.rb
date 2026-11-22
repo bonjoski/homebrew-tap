@@ -6,8 +6,8 @@
 class Conjoiner < Formula
   desc "Deterministic tool gateway and RFC 9449 DPoP token library for AI agents"
   homepage "https://github.com/bonjoski/conjoiner"
-  url "https://github.com/bonjoski/conjoiner/archive/refs/tags/v0.3.6.tar.gz"
-  sha256 "91ee06114436ada5077f6aba59cd82fbca7c1a3119f9189ad27a41989db34e94"
+  url "https://github.com/bonjoski/conjoiner/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "e2b1c7ac1e87cfbe95a1a268d7c802d84c75b769539ad9521b2ee349a41b1f9b"
   license "MIT"
   head "https://github.com/bonjoski/conjoiner.git", branch: "main"
 

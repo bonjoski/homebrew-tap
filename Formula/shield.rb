@@ -6,8 +6,8 @@
 class Shield < Formula
   desc "Local client-side secret redactor and loopback wire guard proxy for AI agents"
   homepage "https://github.com/bonjoski/shield"
-  url "https://github.com/bonjoski/shield/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "8c1a295569040c6fedd5899bbed09e67dea1feea283445a46123135260e40ce8"
+  url "https://github.com/bonjoski/shield/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "b8fbdd2773d4ad3372a7cc639d39ba4140f4ffaf12aabcd21527250a9843c14b"
   license "MIT"
   head "https://github.com/bonjoski/shield.git", branch: "main"
 
