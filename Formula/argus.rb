@@ -6,8 +6,8 @@
 class Argus < Formula
   desc "Pre-flight dependency validator and local typosquatting package scanner"
   homepage "https://github.com/bonjoski/argus"
-  url "https://github.com/bonjoski/argus/archive/refs/tags/v0.11.0.tar.gz"
-  sha256 "c826decfa57a5020c84ae73e66fda1239028325be091ead96a35e83bf4688459"
+  url "https://github.com/bonjoski/argus/archive/refs/tags/v0.11.2.tar.gz"
+  sha256 "9bab9d3646eee2285a5476f0f0f87ba4b00c5c6cf021111daaf7e6bd76955bfa"
   license "Apache-2.0"
   head "https://github.com/bonjoski/argus.git", branch: "main"
 
