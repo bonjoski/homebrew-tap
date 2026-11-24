@@ -6,8 +6,8 @@
 class Coppermind < Formula
   desc "Portable cognitive AI brain and sovereign agent memory runtime"
   homepage "https://github.com/bonjoski/coppermind"
-  url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "c55e6124a3d515d79013111cf51f292bc35a153b7962403fd9b1c2cdb6f9fc3c"
+  url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "fa76def43311c821eecd4cfbc7a39cacd79aa991cd8356219f1f62477f784fcd"
   license "Apache-2.0"
   head "https://github.com/bonjoski/coppermind.git", branch: "main"
 
