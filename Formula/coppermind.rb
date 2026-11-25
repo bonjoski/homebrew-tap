@@ -2,9 +2,9 @@
 # frozen_string_literal: true
 
 # Formula for Coppermind (bonjoski/coppermind)
-# Portable Cognitive AI Brain & Sovereign Agent Memory Runtime
+# Local-First AI Memory System for Coding Agents
 class Coppermind < Formula
-  desc "Portable cognitive AI brain and sovereign agent memory runtime"
+  desc "Local-first AI memory system for coding agents"
   homepage "https://github.com/bonjoski/coppermind"
   url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.8.0.tar.gz"
   sha256 "22ba5a0c4c371bff38c21e78727647519682a445f822f939c553cd9501efcf54"
@@ -19,7 +19,7 @@ class Coppermind < Formula
 
   def caveats
     <<~EOS
-      🧠 Coppermind Cognitive AI Brain & Agent Memory Runtime installed!
+      🧠 Coppermind Local-First AI Memory System installed!
 
       To start the native Model Context Protocol (MCP) server:
         coppermind mcp

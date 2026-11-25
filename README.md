@@ -12,7 +12,7 @@ This tap provides formulas for:
 - **[Airlock](https://github.com/bonjoski/airlock)** – Zero-trust workstation sandbox for untrusted package installs & agentic AI loops.
 - **[Argus](https://github.com/bonjoski/argus)** – Pre-flight dependency validator and local typosquatting package scanner.
 - **[Bomhound](https://github.com/bonjoski/bomhound)** – High-performance SBOM copyright & legal provenance enrichment engine.
-- **[Coppermind](https://github.com/bonjoski/coppermind)** – Portable local cognitive memory & security mentor capsule engine.
+- **[Coppermind](https://github.com/bonjoski/coppermind)** – Local-first AI memory system and security mentor capsule engine for coding agents.
 - **[Shield](https://github.com/bonjoski/shield)** – Local workstation CLI/pipe secret redactor and `127.0.0.1` loopback utility.
 - **[Conjoiner](https://github.com/bonjoski/conjoiner)** – Deterministic tool gateway and RFC 9449 DPoP reference library for local agent CLI tools.
 - **[Stormcage](https://github.com/bonjoski/stormcage)** – In-process prompt and context sanitization Go library for multi-agent test harnesses.
