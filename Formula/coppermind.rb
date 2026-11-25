@@ -6,8 +6,8 @@
 class Coppermind < Formula
   desc "Local-first AI memory system for coding agents"
   homepage "https://github.com/bonjoski/coppermind"
-  url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.9.1.tar.gz"
-  sha256 "cde77c871574792d987f89eb9063ee13f9b3e07fd7b53143d0c1e5dc310f6d62"
+  url "https://github.com/bonjoski/coppermind/archive/refs/tags/v0.9.2.tar.gz"
+  sha256 "153a7543f13e2ab5284b1690bb0e42b8ffa97952c6f597f0b0526385b9f8ebde"
   license "Apache-2.0"
   head "https://github.com/bonjoski/coppermind.git", branch: "main"
 
