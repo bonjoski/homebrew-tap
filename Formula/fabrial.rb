@@ -6,8 +6,8 @@
 class Fabrial < Formula
   desc "Sovereign AI agent security fabric orchestrating the bonjoski security toolchain"
   homepage "https://github.com/bonjoski/fabrial"
-  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.7.7.tar.gz"
-  sha256 "c97747607948fa42b994ed54fcebc1a45ec11f93b7c3408b5f79bc192a95fbf0"
+  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.7.8.tar.gz"
+  sha256 "48c08e2dd6edc0f7ad979b120f4824ea64de488b3ea6cab6fd1b5e933acfd080"
   license "Apache-2.0"
   head "https://github.com/bonjoski/fabrial.git", branch: "main"
 
@@ -35,6 +35,7 @@ class Fabrial < Formula
     ]
 
     system "go", "build", *std_go_args(output: bin/"fabrial", ldflags: ldflags.join(" ")), "./cmd/fabrial"
+    system "go", "build", *std_go_args(output: bin/"fabrial-top", ldflags: ldflags.join(" ")), "./cmd/fabrial-top"
   end
 
   def caveats
@@ -53,12 +54,16 @@ class Fabrial < Formula
       To check active subagent sessions and microVM queue status:
         fabrial session status
 
+      To launch the decoupled local multi-agent mission control TUI:
+        fabrial-top   # or: fabrial top
+
       Optional local extensions are auto-discovered if installed on PATH.
     EOS
   end
 
   test do
     assert_match "Fabrial Unified Fabric", shell_output("#{bin}/fabrial version")
+    assert_match "fabrial-top", shell_output("#{bin}/fabrial-top --version")
     assert_match "Diagnostic Suite", shell_output("#{bin}/fabrial doctor")
   end
 end
