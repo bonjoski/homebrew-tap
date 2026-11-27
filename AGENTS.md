@@ -3,7 +3,7 @@
 > **Project:** `homebrew-tap`  
 > **Role:** Lead Release & Packaging Infrastructure Engineer  
 > **Ecosystem:** `bonjoski` Sovereign AI Agent Security Toolchain  
-> **Canonical GitHub Description:** *Official Homebrew tap for the Bonjoski sovereign AI agent security toolchain (Fabrial, Airlock, Aegisbox, Argus, Shield, Conjoiner, Stormcage, Soulcaster, Bomhound).*  
+> **Canonical GitHub Description:** *Official Homebrew tap for the Bonjoski sovereign AI agent security toolchain (Fabrial, Airlock, Aegisbox, Argus, Conjoiner, Coppermind, Soulcaster, Bomhound, Locksmith).*  
 
 ---
 
@@ -35,12 +35,12 @@ homebrew-tap/
 │   ├── airlock.rb             # Tier 1 kernel sandbox (<15ms)
 │   ├── aegisbox.rb            # Tier 2 microVM sandbox & range engine
 │   ├── argus.rb               # Pre-flight slopsquatting interceptor
-│   ├── shield.rb              # Client secret shield & wire guard
 │   ├── conjoiner.rb           # Sovereign agentic IAM broker (DPoP)
-│   ├── stormcage.rb           # Cross-agent context memory firewall
+│   ├── coppermind.rb          # Local-first AI memory & security mentor capsules
 │   ├── soulcaster.rb          # Hermetic compiler attestation (SLSA v1.0)
 │   ├── bomhound.rb            # CycloneDX legal attribution engine
-│   └── locksmith.rb           # Mirror formula for biometric secrets vault
+│   ├── locksmith.rb           # Mirror formula for biometric secrets vault
+│   └── paved-road.rb          # Single-command paved-road meta-formula
 └── README.md                  # Installation instructions and formula catalog
 ```
 

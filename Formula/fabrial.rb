@@ -2,12 +2,12 @@
 # frozen_string_literal: true
 
 # Formula for Fabrial (bonjoski/fabrial)
-# The Sovereign AI Agent Security Fabric: Airlock, Locksmith, Aegisbox, Argus, Shield, Conjoiner, Stormcage, Soulcaster, Bomhound.
+# The Sovereign AI Agent Security Fabric: Airlock, Locksmith, Aegisbox, Argus, Conjoiner, Soulcaster, Bomhound.
 class Fabrial < Formula
   desc "Sovereign AI agent security fabric orchestrating the bonjoski security toolchain"
   homepage "https://github.com/bonjoski/fabrial"
-  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.7.3.tar.gz"
-  sha256 "83c98ab37b1c662e3d9d2820e98f6bbef7f12bf9924b77c981ee3cf255aa0cfa"
+  url "https://github.com/bonjoski/fabrial/archive/refs/tags/v0.7.4.tar.gz"
+  sha256 "6023ed0c171971a33676dd2706d3b07e1cce1f601e1d83b9719cb47e4cc167ce"
   license "Apache-2.0"
   head "https://github.com/bonjoski/fabrial.git", branch: "main"
 
@@ -18,9 +18,7 @@ class Fabrial < Formula
   depends_on "bonjoski/tap/locksmith"
   depends_on "bonjoski/tap/aegisbox"
   depends_on "bonjoski/tap/argus"
-  depends_on "bonjoski/tap/shield"
   depends_on "bonjoski/tap/conjoiner"
-  depends_on "bonjoski/tap/stormcage"
   depends_on "bonjoski/tap/soulcaster"
   depends_on "bonjoski/tap/bomhound"
 
@@ -43,7 +41,7 @@ class Fabrial < Formula
     <<~EOS
       💎 Fabrial Sovereign AI Security Fabric has been installed!
 
-      To inspect the health and socket status of all 9 security tools:
+      To inspect the health and socket status of your local sovereign security stack:
         fabrial doctor
 
       To automatically repair misconfigured permissions or stale sockets:
@@ -54,6 +52,8 @@ class Fabrial < Formula
 
       To check active subagent sessions and microVM queue status:
         fabrial session status
+
+      Optional local extensions are auto-discovered if installed on PATH.
     EOS
   end
 

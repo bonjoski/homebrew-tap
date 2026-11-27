@@ -11,7 +11,7 @@ class PavedRoad < Formula
   sha256 "83c98ab37b1c662e3d9d2820e98f6bbef7f12bf9924b77c981ee3cf255aa0cfa"
   license "Apache-2.0"
 
-  # Full Sovereign Local Workstation Toolchain
+  # Public Sovereign Local Workstation Toolchain
   depends_on "bonjoski/tap/fabrial"
   depends_on "bonjoski/tap/airlock"
   depends_on "bonjoski/tap/aegisbox"
@@ -19,8 +19,6 @@ class PavedRoad < Formula
   depends_on "bonjoski/tap/locksmith"
   depends_on "bonjoski/tap/soulcaster"
   depends_on "bonjoski/tap/bomhound"
-  depends_on "bonjoski/tap/shield"
-  depends_on "bonjoski/tap/stormcage"
   depends_on "bonjoski/tap/conjoiner"
   depends_on "bonjoski/tap/coppermind"
 

@@ -1,6 +1,6 @@
 # Homebrew Tap (Bonjoski)
 
-> Official Homebrew tap for the Bonjoski sovereign AI agent security toolchain (Fabrial, Airlock, Aegisbox, Argus, Shield, Conjoiner, Stormcage, Soulcaster, Bomhound).
+> Official Homebrew tap for the Bonjoski sovereign AI agent security toolchain (Fabrial, Airlock, Aegisbox, Argus, Conjoiner, Coppermind, Soulcaster, Bomhound, Locksmith).
 
 ## Core Capabilities
 - Automated Homebrew Distribution: Distributes pre-compiled multi-arch bottles (ARM64 / x86_64) for macOS and Linux.
@@ -17,11 +17,11 @@
 - `airlock`: Tier 1 kernel process sandbox (<15ms).
 - `aegisbox`: Tier 2 microVM hardware isolation sandbox.
 - `argus`: Pre-flight slopsquatting interceptor.
-- `shield`: Client-side secret redactor and fail-closed wire guard.
 - `conjoiner`: NIST SP 800-207A agentic IAM broker.
-- `stormcage`: Cross-agent context memory firewall.
+- `coppermind`: Local-first AI memory system and security mentor capsule engine.
 - `soulcaster`: Runtime compiler attestation (SLSA v1.0).
 - `bomhound`: CycloneDX legal attribution engine.
+- `locksmith`: Biometric secrets vault (Touch ID / TPM2).
 
 ## Documentation
 - Documentation: README.md & AGENTS.md

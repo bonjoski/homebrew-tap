@@ -27,9 +27,7 @@ brew "bonjoski/tap/argus"
 brew "bonjoski/tap/soulcaster"
 brew "bonjoski/tap/bomhound"
 
-# Local Workstation CLI/Pipe Secret Redactor, In-Process Sanitization Library & Tool IAM
-brew "bonjoski/tap/shield"
-brew "bonjoski/tap/stormcage"
+# Deterministic Tool IAM & RFC 9449 DPoP Capability Gateway
 brew "bonjoski/tap/conjoiner"
 
 # Portable Local Cognitive Memory & Security Mentor Capsules
