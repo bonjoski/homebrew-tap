@@ -16,6 +16,7 @@ This tap provides formulas for:
 - **[Conjoiner](https://github.com/bonjoski/conjoiner)** – Deterministic tool gateway and RFC 9449 DPoP reference library for local agent CLI tools.
 - **[Soulcaster](https://github.com/bonjoski/soulcaster)** – Sovereign compiler wrapper and in-toto provenance attestation engine.
 - **[Tinmind](https://github.com/bonjoski/tinmind)** – Sovereign local PTY flight recorder and deterministic Safe-ANSI TTY replay for coding agents.
+- **[Oathgate](https://github.com/bonjoski/oathgate)** – Instant Copy-on-Write time-travel workspace checkpoints (`clonefile(2)` / `FICLONE`) for coding agents.
 - **[Locksmith](https://github.com/bonjoski/locksmith)** – Secure macOS keychain-backed secrets manager with Touch ID / Apple Watch biometric authentication and desktop cockpit.
 
 ---
@@ -67,5 +68,6 @@ brew install bonjoski/tap/soulcaster
 brew install bonjoski/tap/bomhound
 brew install bonjoski/tap/coppermind
 brew install bonjoski/tap/tinmind
+brew install bonjoski/tap/oathgate
 brew install bonjoski/tap/locksmith
 ```
