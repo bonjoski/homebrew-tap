@@ -11,6 +11,15 @@ class Aegisbox < Formula
 
   depends_on "go" => :build
 
+  on_macos do
+    if Hardware::CPU.arm?
+      resource "cockpit-arm64" do
+        url "https://github.com/bonjoski/aegisbox/releases/download/v0.8.1/aegisbox-cockpit-darwin-arm64"
+        sha256 "4120d300845bcf3ad608b05ae2af19209d91d3e3133b68162799147cd1422366"
+      end
+    end
+  end
+
   def install
     ldflags = "-s -w -X github.com/bonjoski/aegisbox/pkg/version.Version=#{version}"
 
@@ -20,11 +29,21 @@ class Aegisbox < Formula
     system "go", "build", *std_go_args(output: bin/"aegisbox-netd", ldflags: ldflags), "./cmd/aegisbox-netd"
     system "go", "build", *std_go_args(output: bin/"aegisbox-guest", ldflags: ldflags), "./cmd/aegisbox-guest"
     system "go", "build", *std_go_args(output: bin/"aegisbox-spiffe-agent", ldflags: ldflags), "./cmd/aegisbox-spiffe-agent"
+
+    # Install desktop cockpit on macOS ARM64
+    if OS.mac? && Hardware::CPU.arm?
+      resource("cockpit-arm64").stage do
+        bin.install "aegisbox-cockpit-darwin-arm64" => "aegisbox-cockpit"
+      end
+    end
   end
 
   def caveats
     <<~EOS
-      Aegisbox MicroVM engine (#{version}) has been installed!
+      Aegisbox MicroVM engine (#{version}) and Cockpit have been installed!
+
+      To launch the Aegisbox Cockpit GUI:
+        aegisbox cockpit
 
       NOTE (macOS Hardware Hypervisor Entitlements):
         Apple Virtualization.framework / Hypervisor.framework requires binaries
@@ -38,5 +57,6 @@ class Aegisbox < Formula
     assert_match "aegisbox version", shell_output("#{bin}/aegisbox version")
     assert_path_exists bin/"aegisboxd"
     assert_path_exists bin/"aegisbox-spiffe-agent"
+    assert_path_exists bin/"aegisbox-cockpit" if OS.mac? && Hardware::CPU.arm?
   end
 end
